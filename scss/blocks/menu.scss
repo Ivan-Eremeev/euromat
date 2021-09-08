@@ -7,7 +7,6 @@
 	top: 0;
 	left: 65px;
 	bottom: 0;
-	z-index: 800;
 	overflow-y: auto;
 	&__logo {
 		display: block;
@@ -66,6 +65,9 @@
 				padding: 16px 26px;
 				font-size: 13px;
 				background-color: #F8F8F8;
+				&:hover, &:active {
+					background-color: #FFFCF6;
+				}
 			}
 		}
 		&__icon {

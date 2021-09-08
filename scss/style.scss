@@ -28,6 +28,8 @@ $break_xs: 500px;
 @include font-face("Gilroy", "../fonts/Gilroy/Gilroy-ExtraBold", 800, normal);
 @include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Black", 900, normal);
 
+@include font-face("Roboto", "../fonts/Roboto/roboto-v27-latin_cyrillic-regular", normal, normal);
+
 // Цвета
 // $black: #000;
 $orange: #FDBC41;
@@ -36,8 +38,9 @@ $orange: #FDBC41;
 @import 'blocks/settings';
 @import 'blocks/lk';
 @import 'blocks/menu';
+@import 'blocks/accordion';
+@import 'blocks/orders';
 // @import 'hamburgers/hamburgers';
-// @import 'blocks/accordion';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';
