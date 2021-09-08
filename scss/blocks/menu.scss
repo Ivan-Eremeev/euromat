@@ -20,11 +20,13 @@
 		}
 		a {
 			display: flex;
+			align-items: center;
 			padding: 20px 36px;
 			font-size: 16px;
 			font-weight: 600;
 			color: #78798A;
 			transition: 0.3s;
+			text-decoration: none;
 			svg {
 				transition: 0.3s;
 				fill: #78798A;
@@ -49,6 +51,12 @@
 		width: 16px;
 		height: 16px;
 		margin-right: 18px;
+		position: relative;
+	}
+	&__lock-icon {
+		position: absolute;
+		right: -7px;
+		bottom: -9px;
 	}
 	@media (max-width: $break_sm) {
 		position: static;
