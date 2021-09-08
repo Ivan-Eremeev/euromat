@@ -1,0 +1,6 @@
+.favorite {
+  &__col {
+    margin-bottom: $gutter;
+    @include col-xs(12);
+  }
+}
