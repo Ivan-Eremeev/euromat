@@ -75,16 +75,12 @@
         top: -5px;
       }
     }
-    .btn-gold {
-      padding: 14px 30px;
-      font-size: 14px;
-    }
     &__title {
       display: none !important;
     }
   }
   @media (max-width: $break_xs) {
-    .btn-gold {
+    .btn-yellow {
       width: 100%;
     }
     .main--breadcrumb-wrapper {

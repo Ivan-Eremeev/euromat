@@ -198,6 +198,12 @@ body {
   box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.14), 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 4px 8px rgba(0, 0, 0, 0.14), 0px 0px 1px rgba(0, 0, 0, 0.14);
   color: #FDBC41;
 }
+@media (max-width: 769px) {
+  .btn-yellow {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+}
 
 /* /settings */
 .lk {
@@ -294,16 +300,12 @@ body {
     font-size: 11px;
     top: -5px;
   }
-  .lk .btn-gold {
-    padding: 14px 30px;
-    font-size: 14px;
-  }
   .lk__title {
     display: none !important;
   }
 }
 @media (max-width: 500px) {
-  .lk .btn-gold {
+  .lk .btn-yellow {
     width: 100%;
   }
   .lk .main--breadcrumb-wrapper {
