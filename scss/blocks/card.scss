@@ -54,6 +54,9 @@
     background-color: $orange;
     font-size: 13px;
     font-weight: 500;
+    &--disable {
+      background-color: #D5DEE7;
+    }
   }
   &__rating {
     display: flex;

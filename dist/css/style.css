@@ -783,6 +783,9 @@ body {
   font-size: 13px;
   font-weight: 500;
 }
+.card__available--disable {
+  background-color: #D5DEE7;
+}
 .card__rating {
   display: -webkit-box;
   display: -ms-flexbox;
