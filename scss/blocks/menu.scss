@@ -1,0 +1,69 @@
+.menu {
+	width: 276px;
+	padding: 33px 0;
+	background: #FFFFFF;
+	box-shadow: 24px 0px 32px rgba(0, 0, 0, 0.04), 16px 0px 24px rgba(0, 0, 0, 0.04), 4px 0px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	position: fixed;
+	top: 0;
+	left: 65px;
+	bottom: 0;
+	z-index: 800;
+	overflow-y: auto;
+	&__logo {
+		display: block;
+		margin-bottom: 109px;
+		text-align: center;
+	}
+	&__list {
+		li {
+			margin-bottom: 2px;
+		}
+		a {
+			display: flex;
+			padding: 20px 36px;
+			font-size: 16px;
+			font-weight: 600;
+			color: #78798A;
+			transition: 0.3s;
+			svg {
+				transition: 0.3s;
+				fill: #78798A;
+				stroke: #78798A;
+			}
+			&.active {
+				color: $orange;
+				svg {
+					fill: $orange;
+					stroke: $orange;
+				}
+			}
+			&:hover, &.active {
+				background-color: #FFFCF6;
+			}
+		}
+	}
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 16px;
+		height: 16px;
+		margin-right: 18px;
+	}
+	@media (max-width: $break_sm) {
+		position: static;
+		width: 100%;
+		padding: 0;
+		box-shadow: none;
+		&__list {
+			a {
+				padding: 16px 26px;
+				font-size: 13px;
+				background-color: #F8F8F8;
+			}
+		}
+		&__icon {
+			margin-right: 16px;
+		}
+	}
+}

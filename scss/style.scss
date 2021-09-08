@@ -1,0 +1,43 @@
+@import 'mixins';
+
+// @include reset(); // Сброс стилей
+
+@import 'mixingrid';
+
+// Переменные для кастомизации Mixingrid
+$columns: 12; // Колличество колонок
+$max-width: 1200px; // Максимальная ширина контейнера
+$gutter: 15px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке
+// Брэйкпоинты
+$break_xl: 1300px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 769px;
+$break_xs: 500px;
+
+// Шрифты
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Thin", 100, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-UltraLight", 200, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Light", 300, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Regular", normal, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Medium", 500, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-SemiBold", 600, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Bold", 700, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-ExtraBold", 800, normal);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Black", 900, normal);
+
+// Цвета
+// $black: #000;
+$orange: #FDBC41;
+
+// Подключение файлов
+@import 'blocks/settings';
+@import 'blocks/lk';
+@import 'blocks/menu';
+// @import 'hamburgers/hamburgers';
+// @import 'blocks/accordion';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';
+// @import 'blocks/tabs';

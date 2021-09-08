@@ -1,0 +1,76 @@
+/* settings */
+body {
+  min-width: 319px;
+}
+.mobile-hide {
+  @media (max-width: $break_sm) {
+    display: none !important;
+  }
+}
+.mobile-visible {
+  @media (min-width: $break_sm + 1) {
+    display: none !important;
+  }
+}
+.img-responsive {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+.row {
+  @include row-flex();
+}
+.wrapper {
+  @include wrapper();
+}
+.main--wf {
+  width: 100%;
+  max-width: none;
+}
+.header--menu {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  .main {
+    padding-left: 375px;
+    margin: 0;
+    nav {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: $break_xl) {
+    .main {
+      nav {
+        padding: 0;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    .main {
+      padding-left: 0;
+    }
+  }
+}
+.body-lk {
+  @media (max-width: $break_sm) {
+    padding-left: 38px !important;
+  }
+}
+/* /settings */
