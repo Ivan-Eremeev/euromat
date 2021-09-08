@@ -359,15 +359,13 @@ body {
   fill: #78798A;
   stroke: #78798A;
 }
-.menu__list a.active {
-  color: #FDBC41;
-}
-.menu__list a.active svg {
-  fill: #FDBC41;
-  stroke: #FDBC41;
-}
 .menu__list a:hover, .menu__list a.active {
   background-color: #FFFCF6;
+  color: #FDBC41;
+}
+.menu__list a:hover svg, .menu__list a.active svg {
+  fill: #FDBC41;
+  stroke: #FDBC41;
 }
 .menu__icon {
   display: -webkit-box;

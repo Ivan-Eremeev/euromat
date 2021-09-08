@@ -32,15 +32,13 @@
 				fill: #78798A;
 				stroke: #78798A;
 			}
-			&.active {
+			&:hover, &.active {
+				background-color: #FFFCF6;
 				color: $orange;
 				svg {
 					fill: $orange;
 					stroke: $orange;
 				}
-			}
-			&:hover, &.active {
-				background-color: #FFFCF6;
 			}
 		}
 	}
