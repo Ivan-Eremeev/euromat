@@ -4,22 +4,140 @@
     padding: 16px;
     background: #F5F5F6;
     border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 19;
+    color: #78798A;
+    margin-bottom: 18px;
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid #EBECEE;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      white-space: nowrap;
+      svg {
+        margin-right: 16px;
+        fill: #000;
+        transition: 0.3s;
+        flex-shrink: 0;
+      }
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+    &--btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        max-width: 500px;
+        margin-right: 20px;
+      }
+    }
   }
   &__title {
-    
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 42px;
   }
   &__inputbtn {
+    display: flex;
+    margin-bottom: 32px;
+    .lk__input {
+      flex-grow: 1;
+    }
     input {
-      
     }
     label {
       
     }
     button {
-
+      margin-left: 16px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   &__popup {
-
+    display: inline-block;
+    padding: 33px 32px;
+    background: #F1FFF4;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #51B767;
+    line-height: 17px;
+  }
+  @media (max-width: $break_md) {
+    &__quote {
+      flex-wrap: wrap;
+      p {
+        margin-bottom: 16px;
+      }
+    }
+    &__inputbtn {
+      flex-wrap: wrap;
+      .lk__input {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .btn-yellow {
+      padding: 21px 60px;
+      margin-left: 0;
+    }
+    &__popup {
+      display: block;
+      text-align: center;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__quote {
+      padding: 8px;
+      p {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      a {
+        padding: 15px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+    &__title {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 26px;
+    }
+    .btn-yellow {
+      padding: 14px 30px;
+    }
+    &__popup {
+      padding: 16px;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__quote {
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }

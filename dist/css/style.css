@@ -979,4 +979,153 @@ body {
   padding: 16px;
   background: #F5F5F6;
   border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 19;
+  color: #78798A;
+  margin-bottom: 18px;
+}
+.form__quote p {
+  margin-bottom: 0;
+}
+.form__quote a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #EBECEE;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.form__quote a svg {
+  margin-right: 16px;
+  fill: #000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.form__quote a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.form__quote a:hover svg {
+  fill: #fff;
+}
+.form__quote--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.form__quote--btn p {
+  max-width: 500px;
+  margin-right: 20px;
+}
+.form__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 42px;
+}
+.form__inputbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+.form__inputbtn .lk__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.form__inputbtn button {
+  margin-left: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.form__popup {
+  display: inline-block;
+  padding: 33px 32px;
+  background: #F1FFF4;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #51B767;
+  line-height: 17px;
+}
+@media (max-width: 1050px) {
+  .form__quote {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .form__quote p {
+    margin-bottom: 16px;
+  }
+  .form__inputbtn {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .form__inputbtn .lk__input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .form .btn-yellow {
+    padding: 21px 60px;
+    margin-left: 0;
+  }
+  .form__popup {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 769px) {
+  .form__quote {
+    padding: 8px;
+  }
+  .form__quote p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .form__quote a {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .form__title {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+  .form .btn-yellow {
+    padding: 14px 30px;
+  }
+  .form__popup {
+    padding: 16px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media (max-width: 500px) {
+  .form__quote a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
