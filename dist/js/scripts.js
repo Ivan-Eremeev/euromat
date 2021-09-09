@@ -151,6 +151,7 @@ $(document).ready(function () {
 								$(this).addClass('open')
 							}
 						);
+						$thisTrigger.closest('.accordion__item').addClass('active');
 					} else {
 						$thisTrigger.removeClass('active');
 						accordion.find('#' + data).stop().slideUp(
@@ -159,6 +160,7 @@ $(document).ready(function () {
 								$(this).removeClass('open')
 							}
 						);
+						$thisTrigger.closest('.accordion__item').removeClass('active');
 					}
 				})
 			})

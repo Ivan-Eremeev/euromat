@@ -423,6 +423,12 @@ body {
   border: 1px solid #EBECEE;
   border-radius: 3px;
   margin-bottom: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.orders__item.active {
+  border: 0.5px solid #000;
 }
 .orders__trigger {
   padding: 14px 150px 14px 18px;
@@ -964,4 +970,13 @@ body {
   .card {
     width: 100%;
   }
+}
+
+.form {
+  max-width: 988px;
+}
+.form__quote {
+  padding: 16px;
+  background: #F5F5F6;
+  border-radius: 3px;
 }

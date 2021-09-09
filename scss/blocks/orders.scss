@@ -3,6 +3,10 @@
     border: 1px solid #EBECEE;
     border-radius: 3px;
     margin-bottom: 10px;
+    transition: 0.3s;
+    &.active {
+      border: 0.5px solid #000;
+    }
   }
   &__trigger {
     padding: 14px 150px 14px 18px;
