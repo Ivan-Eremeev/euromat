@@ -6,11 +6,13 @@
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: 19;
+    line-height: 19px;
     color: #78798A;
     margin-bottom: 18px;
     p {
       margin-bottom: 0;
+      font-size: 16px;
+      line-height: 19px;
     }
     a {
       display: inline-flex;
@@ -81,6 +83,99 @@
     color: #51B767;
     line-height: 17px;
   }
+  .lk__textarea {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  &__date {
+    height: 1px;
+    background-color: #EBECEE;
+    font-weight: 500;
+    position: relative;
+    margin-top: 83px;
+    margin-bottom: 48px;
+    span {
+      display: block;
+      background-color: #fff;
+      padding: 0 16px;
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+  }
+  &__messages {
+    max-height: 360px;
+    overflow-y: auto;
+  }
+  &__messages-inner {
+    padding-right: 20px;
+  }
+  &__message {
+    margin-bottom: 32px;
+    padding-left: 12px;
+    span {
+      display: inline-block;
+      max-width: 90%;
+      padding: 20px 34px;
+      border-radius: 0 3px 3px 3px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 0;
+        left: -12px;
+      }
+    }
+    &--out {
+      span {
+        background-color: #F5F5F6;
+        &:after {
+          background: linear-gradient(to left bottom, #F5F5F6 50%, #fff 51%);
+        }
+      }
+    }
+    &--in {
+      text-align: right;
+      span {
+        background-color: #FFEAC2;
+        &:after {
+          background: linear-gradient(to left bottom, #FFEAC2 50%, #fff 51%);
+        }
+      }
+    }
+  }
+  &__container {
+    max-width: 484px;
+    .lk__input {
+      margin-bottom: 26px;
+      &::placeholder {
+        
+        color: #78798A;
+      }
+    }
+    .btn-yellow {
+      margin-top: 6px;
+    }
+  }
+  .scroll-element.scroll-x {
+      display: none !important;
+  }
+  .scrollbar-inner > .scroll-element.scroll-y {
+    width: 3px;
+  }
+  .scrollbar-inner > .scroll-element .scroll-bar {
+    background: #000;
+    opacity: 1;
+    border-radius: 3px;
+  }
+  .scrollbar-inner > .scroll-element .scroll-element_track {
+    background: #EBECEE;
+    opacity: 1;
+  }
   @media (max-width: $break_md) {
     &__quote {
       flex-wrap: wrap;
@@ -107,6 +202,8 @@
   @media (max-width: $break_sm) {
     &__quote {
       padding: 8px;
+      font-size: 13px;
+      line-height: 15px;
       p {
         font-size: 13px;
         line-height: 15px;
@@ -129,6 +226,54 @@
       padding: 16px;
       font-size: 11px;
       line-height: 13px;
+    }
+    .lk__textarea {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    &__date {
+      margin-top: 48px;
+      margin-bottom: 28px;
+      font-size: 11px;
+      span {
+        padding: 0 8px;
+        top: -6px;
+      }
+    }
+    &__messages {
+      max-height: 250px;
+    }
+    &__message {
+      margin-bottom: 8px;
+      span {
+        max-width: none;
+        padding: 12px 24px;
+        font-size: 11px;
+        line-height: 13px;
+      }
+      &--out {
+        
+      }
+      &--in {
+        padding-left: 0;
+        padding-right: 12px;
+        span {
+          border-radius: 3px 0 3px 3px;
+          &:after {
+            left: auto;
+            right: -12px;
+            background: linear-gradient(to right bottom, #FFEAC2 50%, #fff 51%);
+          }
+        }
+      }
+    }
+    &__container {
+      .lk__input {
+        margin-bottom: 16px;
+      }
+      .btn-yellow  {
+        margin-top: 0;
+      }
     }
   }
   @media (max-width: $break_xs) {

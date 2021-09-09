@@ -270,7 +270,80 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+.lk__input input[type=password] {
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+.lk__input input[type=password]::-webkit-input-placeholder {
+  color: #78798A;
+}
+.lk__input input[type=password]::-moz-placeholder {
+  color: #78798A;
+}
+.lk__input input[type=password]:-ms-input-placeholder {
+  color: #78798A;
+}
+.lk__input input[type=password]::-ms-input-placeholder {
+  color: #78798A;
+}
+.lk__input input[type=password]::placeholder {
+  color: #78798A;
+}
 .lk__input label {
+  display: inline-block;
+  padding: 0 5px;
+  color: #78798A;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: -9px;
+  left: 20px;
+}
+.lk__copy {
+  margin-top: 42px;
+  padding: 16px 20px;
+  border: 1px solid #EBECEE;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #000;
+  position: relative;
+  cursor: pointer;
+}
+.lk__copy span {
+  display: inline-block;
+  padding: 0 5px;
+  color: #78798A;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: -9px;
+  left: 20px;
+}
+.lk__copy svg {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.lk__textarea {
+  position: relative;
+}
+.lk__textarea textarea {
+  width: 100%;
+  height: 125px;
+  padding: 20px;
+  border: 1px solid #EBECEE;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  resize: none;
+}
+.lk__textarea label {
   display: inline-block;
   padding: 0 5px;
   color: #78798A;
@@ -303,12 +376,37 @@ body {
     height: 40px;
     font-size: 13px;
   }
+  .lk__input input[type=password] {
+    height: 51px;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+  }
   .lk__input label {
     font-size: 11px;
     top: -5px;
   }
   .lk__title {
     display: none !important;
+  }
+  .lk__textarea textarea {
+    height: 100px;
+    font-size: 13px;
+  }
+  .lk__textarea label {
+    font-size: 11px;
+    top: -5px;
+  }
+  .lk__copy {
+    margin-top: 33px;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .lk__copy span {
+    font-size: 11px;
+    top: -6px;
+  }
+  .lk__copy svg {
+    right: 16px;
   }
 }
 @media (max-width: 500px) {
@@ -981,12 +1079,14 @@ body {
   border-radius: 3px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 19;
+  line-height: 19px;
   color: #78798A;
   margin-bottom: 18px;
 }
 .form__quote p {
   margin-bottom: 0;
+  font-size: 16px;
+  line-height: 19px;
 }
 .form__quote a {
   display: -webkit-inline-box;
@@ -1070,6 +1170,114 @@ body {
   color: #51B767;
   line-height: 17px;
 }
+.form .lk__textarea {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.form__date {
+  height: 1px;
+  background-color: #EBECEE;
+  font-weight: 500;
+  position: relative;
+  margin-top: 83px;
+  margin-bottom: 48px;
+}
+.form__date span {
+  display: block;
+  background-color: #fff;
+  padding: 0 16px;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.form__messages {
+  max-height: 360px;
+  overflow-y: auto;
+}
+.form__messages-inner {
+  padding-right: 20px;
+}
+.form__message {
+  margin-bottom: 32px;
+  padding-left: 12px;
+}
+.form__message span {
+  display: inline-block;
+  max-width: 90%;
+  padding: 20px 34px;
+  border-radius: 0 3px 3px 3px;
+  position: relative;
+}
+.form__message span:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: -12px;
+}
+.form__message--out span {
+  background-color: #F5F5F6;
+}
+.form__message--out span:after {
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, #F5F5F6), color-stop(51%, #fff));
+  background: -o-linear-gradient(right top, #F5F5F6 50%, #fff 51%);
+  background: linear-gradient(to left bottom, #F5F5F6 50%, #fff 51%);
+}
+.form__message--in {
+  text-align: right;
+}
+.form__message--in span {
+  background-color: #FFEAC2;
+}
+.form__message--in span:after {
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, #FFEAC2), color-stop(51%, #fff));
+  background: -o-linear-gradient(right top, #FFEAC2 50%, #fff 51%);
+  background: linear-gradient(to left bottom, #FFEAC2 50%, #fff 51%);
+}
+.form__container {
+  max-width: 484px;
+}
+.form__container .lk__input {
+  margin-bottom: 26px;
+}
+.form__container .lk__input::-webkit-input-placeholder {
+  color: #78798A;
+}
+.form__container .lk__input::-moz-placeholder {
+  color: #78798A;
+}
+.form__container .lk__input:-ms-input-placeholder {
+  color: #78798A;
+}
+.form__container .lk__input::-ms-input-placeholder {
+  color: #78798A;
+}
+.form__container .lk__input::placeholder {
+  color: #78798A;
+}
+.form__container .btn-yellow {
+  margin-top: 6px;
+}
+.form .scroll-element.scroll-x {
+  display: none !important;
+}
+.form .scrollbar-inner > .scroll-element.scroll-y {
+  width: 3px;
+}
+.form .scrollbar-inner > .scroll-element .scroll-bar {
+  background: #000;
+  opacity: 1;
+  border-radius: 3px;
+}
+.form .scrollbar-inner > .scroll-element .scroll-element_track {
+  background: #EBECEE;
+  opacity: 1;
+}
 @media (max-width: 1050px) {
   .form__quote {
     -ms-flex-wrap: wrap;
@@ -1098,6 +1306,8 @@ body {
 @media (max-width: 769px) {
   .form__quote {
     padding: 8px;
+    font-size: 13px;
+    line-height: 15px;
   }
   .form__quote p {
     font-size: 13px;
@@ -1120,6 +1330,51 @@ body {
     padding: 16px;
     font-size: 11px;
     line-height: 13px;
+  }
+  .form .lk__textarea {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .form__date {
+    margin-top: 48px;
+    margin-bottom: 28px;
+    font-size: 11px;
+  }
+  .form__date span {
+    padding: 0 8px;
+    top: -6px;
+  }
+  .form__messages {
+    max-height: 250px;
+  }
+  .form__message {
+    margin-bottom: 8px;
+  }
+  .form__message span {
+    max-width: none;
+    padding: 12px 24px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .form__message--in {
+    padding-left: 0;
+    padding-right: 12px;
+  }
+  .form__message--in span {
+    border-radius: 3px 0 3px 3px;
+  }
+  .form__message--in span:after {
+    left: auto;
+    right: -12px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FFEAC2), color-stop(51%, #fff));
+    background: -o-linear-gradient(left top, #FFEAC2 50%, #fff 51%);
+    background: linear-gradient(to right bottom, #FFEAC2 50%, #fff 51%);
+  }
+  .form__container .lk__input {
+    margin-bottom: 16px;
+  }
+  .form__container .btn-yellow {
+    margin-top: 0;
   }
 }
 @media (max-width: 500px) {

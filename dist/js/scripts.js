@@ -168,6 +168,11 @@ $(document).ready(function () {
 	}
 	accordion();
 
+	// JQuery Scrollbar
+	if ($('.scrollbar-inner').length) {
+		$('.scrollbar-inner').scrollbar();
+	}
+
 	// // Модальное окно
 	// function modal(modal) {
 	// 	$('.modal-trigger').on('click', function() {
